@@ -429,7 +429,9 @@ static NSString *WidthConstraint = @"WidthConstraint";
 #pragma mark -
 
 - (void)hiddenSwipeView {
-    if (CGRectGetMinX(self.contentView.frame) < 0.f) {
+    if (CGRectGetMinX(self.contentView.frame) < 0.f ||
+        [self.gestureRecognizers containsObject:self.tapGesture] ||
+        [self.swipeOverlayView superview]) {
         [self setIsCancel:YES];
         [self refreshSwipeViewDisplay];
     }
