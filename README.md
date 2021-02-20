@@ -9,10 +9,6 @@ UITableViewCell 自定义侧滑菜单
 <img src="./Images/menus.png" width="320">
     
 
-# 系统要求
-* iOS 9.0 及以上
-* 需要 ARC
-
 # 集成
 
 * `git clone https://github.com/solehe/XXSwipeTableViewCell`
@@ -21,7 +17,7 @@ UITableViewCell 自定义侧滑菜单
 
 # 使用方法
 * 自定义Cell并继承XXSwipeTableViewCell，然后设置itemViews。
-* 如果某个菜单需要二次确认，需要设置它的type为XXSwipeItemTypeDestructive。
+* 如果某个菜单需要二次确认，设置它的type为XXSwipeItemTypeDestructive。
 * 如果不满足需求，那就自己改源码吧！！！
 
 
